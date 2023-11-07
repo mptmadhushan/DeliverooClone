@@ -20,7 +20,7 @@ function AppNavigator() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Splash">
+      <Stack.Navigator initialRouteName="FoodList">
       <Stack.Screen name="Splash" component={SplashScreen} options={{ headerShown: false }} />
         {!isAuthenticated ? (
           <Stack.Screen name="FoodList" component={FoodList} options={{ headerShown: false }} />
