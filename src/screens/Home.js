@@ -3,10 +3,12 @@ import {View, Text, StyleSheet, StatusBar, ScrollView} from 'react-native';
 import HeaderComponent from '../components/Header';
 import {SIZES, COLORS, FONTS} from '../constants/theme';
 import Banner from '../components/Banner.tsx';
+import Header from '../components/Header';
 import RestaurantInfo from '../components/RestaurantInfo';
 function Home() {
   return (
     <ScrollView>
+      <Header/>
       <Banner
         source={require('../../assets/banner.webp')}
         iconTopLeftName="arrow-circle-left"
