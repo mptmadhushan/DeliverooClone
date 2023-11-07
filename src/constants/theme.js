@@ -8,7 +8,7 @@ export const COLORS = {
   third: '#e67400', 
 
 
-  black: '#2e3333',
+  black:'#2e3333',
   white: '#FFFFFF',
 
   transparent: 'transparent',
@@ -24,7 +24,7 @@ export const SIZES = {
 
   // font sizes
   largeTitle: 50,
-  h1: 30,
+  h1: 35,
   h2: 22,
   h3: 20,
   h4: 18,
@@ -45,15 +45,15 @@ export const FONTS = {
     fontSize: SIZES.largeTitle,
     lineHeight: 55,
   },
-  h1: {fontFamily: 'IBMPlexSans-BoldItalic', fontSize: SIZES.h1, lineHeight: 36},
-  h2: {fontFamily: 'IBMPlexSans-Bold', fontSize: SIZES.h2, lineHeight: 30},
-  h3: {fontFamily: 'IBMPlexSans-Bold', fontSize: SIZES.h3, lineHeight: 22},
-  h4: {fontFamily: 'IBMPlexSans-Regular', fontSize: SIZES.h4, lineHeight: 22},
-  body1: {fontFamily: 'IBMPlexSans-Regular', fontSize: SIZES.body1, lineHeight: 36},
-  body2: {fontFamily: 'IBMPlexSans-Regular', fontSize: SIZES.body2, lineHeight: 30},
-  body3: {fontFamily: 'IBMPlexSans-Regular', fontSize: SIZES.body3},
-  body4: {fontFamily: 'IBMPlexSans-Regular', fontSize: SIZES.body4, lineHeight: 22},
-  body5: {fontFamily: 'IBMPlexSans-Regular', fontSize: SIZES.body5, lineHeight: 22},
+  h1: {fontFamily: 'IBMPlexSans-Bold', fontSize: SIZES.h1, lineHeight: 36,color:COLORS.black},
+  h2: {fontFamily: 'IBMPlexSans-Bold', fontSize: SIZES.h2, lineHeight: 30,color:COLORS.black},
+  h3: {fontFamily: 'IBMPlexSans-Bold', fontSize: SIZES.h3, lineHeight: 22,color:COLORS.black},
+  h4: {fontFamily: 'IBMPlexSans-Regular', fontSize: SIZES.h4, lineHeight: 22,color:COLORS.black},
+  body1: {fontFamily: 'IBMPlexSans-Regular', fontSize: SIZES.body1, lineHeight: 36,color:COLORS.black},
+  body2: {fontFamily: 'IBMPlexSans-Regular', fontSize: SIZES.body2, lineHeight: 30,color:COLORS.black},
+  body3: {fontFamily: 'IBMPlexSans-Regular', fontSize: SIZES.body3,color:COLORS.black},
+  body4: {fontFamily: 'IBMPlexSans-Regular', fontSize: SIZES.body4, lineHeight: 22,color:COLORS.black},
+  body5: {fontFamily: 'IBMPlexSans-Regular', fontSize: SIZES.body5, lineHeight: 22,color:COLORS.black},
 };
 
 const appTheme = {COLORS, SIZES, FONTS};
