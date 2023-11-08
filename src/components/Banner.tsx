@@ -12,9 +12,12 @@ import {SIZES, COLORS, FONTS} from '../constants/theme';
 
 interface ReusableImageBackgroundProps {
   source: ImageSourcePropType;
-  iconTopLeftName: string; // Rename iconTopLeftName to iconTopName
+  iconTopLeftName: string; 
+  restaurantName: string; 
   iconBottomRightName: string;
-  onTopPress?: () => void; // Rename onTopLeftPress to onTopPress
+  cuisineType: string;
+  distance: string;
+  onTopPress?: () => void; 
   onBottomRightPress?: () => void;
 }
 

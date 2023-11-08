@@ -1791,6 +1791,15 @@
     react-is "^16.13.0"
     use-latest-callback "^0.1.7"
 
+"@react-navigation/drawer@^6.6.6":
+  version "6.6.6"
+  resolved "https://registry.yarnpkg.com/@react-navigation/drawer/-/drawer-6.6.6.tgz#6a48e5ea2bf70dc6dfbe17e7e48b5a532d8886dc"
+  integrity sha512-DW/oNRisSOGOqvZfCzfhKBxnzT97Teqtg1Gal85g+K3gnVbM1jOBE2PdnYsKU0fULfFtDwvp/QZSbcgjDpr12A==
+  dependencies:
+    "@react-navigation/elements" "^1.3.21"
+    color "^4.2.3"
+    warn-once "^0.1.0"
+
 "@react-navigation/elements@^1.3.21":
   version "1.3.21"
   resolved "https://registry.yarnpkg.com/@react-navigation/elements/-/elements-1.3.21.tgz#debac6becc6b6692da09ec30e705e476a780dfe1"
@@ -5679,11 +5688,6 @@ react-native-splash-screen@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/react-native-splash-screen/-/react-native-splash-screen-3.3.0.tgz#3af71ed17afe50fee69590a45aec399d071ead02"
   integrity sha512-rGjt6HkoSXxMqH4SQUJ1gnPQlPJV8+J47+4yhgTIan4bVvAwJhEeJH7wWt9hXSdH4+VfwTS0GTaflj1Tw83IhA==
-
-react-native-sticky-parallax-header@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/react-native-sticky-parallax-header/-/react-native-sticky-parallax-header-1.1.1.tgz#1b58dfcb1acd21b236ea8f4010cb1a24c9eb60fc"
-  integrity sha512-vP2tCqsWECNy1H5dNbLnMTpgSkswIpRTFO1itkQZX23JERxCUe7EfSQ9gDw0KwYgQm94ix2vWAo2mn/MeVLI0Q==
 
 react-native-vector-icons@^10.0.1:
   version "10.0.1"
