@@ -10,7 +10,7 @@ import {
 import {useSelector, useDispatch} from 'react-redux';
 import {fetchFoodData, selectFoodData} from '../Store/slices/foodSlice';
 import {FoodItemCard} from '../components/FoodItemCard';
-import { SIZES, COLORS, FONTS} from '../constants/theme';
+import {SIZES, COLORS, FONTS} from '../constants/theme';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import Banner from '../components/Banner.tsx';
 const FoodList = () => {
@@ -67,36 +67,6 @@ const FoodList = () => {
   }
   return (
     <View style={styles.container}>
-      <View style={styles.headerComponent}>
-        <View style={styles.logoContainer}>
-          <Image
-            source={require('../../assets/logoDeliveroo.png')}
-            style={styles.logo}
-          />
-          <Text style={styles.logoText}>Deliveroo</Text>
-        </View>
-        <Icon name="search" size={20} color={COLORS.primary} />
-
-        <View style={styles.logoContainer}>
-          <Icon name="user" size={20} color={COLORS.primary} />
-          <Text style={styles.logoText}>Account</Text>
-
-        </View>
-      </View>
-     <View style={{height:SIZES.height*0.3}}>
-     <Banner
-      source={require('../../assets/banner.webp')}
-      iconTopLeftName="arrow-circle-left"
-      iconBottomRightName="user-friends"
-      onTopLeftPress={() => {
-        // Handle top-left icon press
-      }}
-      onBottomRightPress={() => {
-        // Handle bottom-right  press
-      }}
-    />
-     </View>
-    
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
@@ -149,6 +119,15 @@ export const styles = StyleSheet.create({
     backgroundColor: '#f0f0f0',
     height: 80,
     marginVertical: 20,
+  },
+  sideIcon: {
+    flex: 1,
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
+    borderWidth: 0.2,
+    borderColor: 'grey',
+    marginLeft: 10,
   },
   headerContent: {
     alignItems: 'flex-start',
@@ -203,7 +182,7 @@ export const styles = StyleSheet.create({
   backgroundImage: {
     flex: 1,
     resizeMode: 'cover',
-    height:SIZES.height * 0.3
+    height: SIZES.height * 0.3,
   },
 });
 

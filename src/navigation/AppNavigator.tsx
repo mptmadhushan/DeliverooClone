@@ -15,6 +15,7 @@ export type RootStackParamList = {
   Home: undefined;
   FoodList: undefined;
   Login: undefined;
+  Test: undefined;
 };
 
 function AppNavigator() {

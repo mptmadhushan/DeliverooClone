@@ -1,14 +1,14 @@
 import React from 'react';
-import {View, Text, StyleSheet, StatusBar, ScrollView} from 'react-native';
-import HeaderComponent from '../components/Header';
-import {SIZES, COLORS, FONTS} from '../constants/theme';
-import Banner from '../components/Banner.tsx';
+import {ScrollView, Text,View, StyleSheet} from 'react-native';
+import Banner from '../components/Banner';
 import Header from '../components/Header';
 import RestaurantInfo from '../components/RestaurantInfo';
-function Home() {
+import FoodList from './FoodList';
+
+const Home: React.FC = () => {
   return (
     <ScrollView>
-      <Header/>
+      <Header />
       <Banner
         source={require('../../assets/banner.webp')}
         iconTopLeftName="arrow-circle-left"
@@ -28,8 +28,25 @@ function Home() {
         cuisineType="Chicken . Salads . Healthy"
         details="0.20 miles away . Opens at 11:00 . £7.00 minimum . £0.49 delivery"
       />
+        <View style={styles.stickyContainer}>
+      <Text style={styles.stickyText}>Sticky Component</Text>
+    </View>
+    <FoodList/>
     </ScrollView>
   );
-}
+};
+const styles = StyleSheet.create({
+  stickyContainer: {
+    position: 'sticky',  // Make the component sticky
+    top: 0,             // Stick it at the top of the parent container
+    backgroundColor: 'white',
+    padding: 10,
+    zIndex: 1,          // Ensure it appears above other content
+  },
+  stickyText: {
+    fontWeight: 'bold',
+  },
+});
+
 
 export default Home;

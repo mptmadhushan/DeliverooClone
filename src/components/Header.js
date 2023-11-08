@@ -1,15 +1,16 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
 import {COLORS, FONTS} from '../constants/theme';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-
+import { useNavigation } from '@react-navigation/native';
 const Header = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <View style={styles.topBar}>
         <View style={styles.logoContainer}>
           <Image
-            source={require('../../assets/deliveroo.png')} // Use the imported image as the source
+            source={require('../../assets/deliveroo.png')}
             style={{width: 30, height: 30}}
           />
           <Text style={styles.logo}>deliveroo</Text>
@@ -22,10 +23,12 @@ const Header = () => {
             size={19}
           />
         </View>
-        <View style={[styles.sideContainer]}>
+        <TouchableOpacity
+        onPress={() => navigation.openDrawer()}
+          style={[styles.sideContainer]}>
           <Icon name="user" color={COLORS.primary} size={13} />
           <Text style={styles.logo}>Account</Text>
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -62,5 +65,4 @@ const styles = StyleSheet.create({
     borderRadius: 9,
   },
 });
-
 export default Header;
